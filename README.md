@@ -17,7 +17,7 @@
            </thead>
            <tbody>
               <tr>
-                 <td>data1</td>
+                 <td>This template facilitates the ingestion from file system sources when a username and password is used for authentication </td>
                  <td>data2</td>
                  <td>data3</td>
               </tr>
