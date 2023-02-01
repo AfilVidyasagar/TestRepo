@@ -2,10 +2,11 @@
 <html>
     
   <body>
+          <h1 style="color:blue;">A Blue Heading</h1>  
           <table>
            <thead>
               <tr>
-                 <th style="color:blue;" >Header1</th>
+                 <th>Header1</th>
                  <th>Header2</th>
                  <th>Header3</th>
               </tr>
