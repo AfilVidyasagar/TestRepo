@@ -1,6 +1,6 @@
 # TestRepo
 <html>
-    
+    <style>h1{color:red;}</style>
   <body>
           <h1 style="color:blue;">A Blue Heading</h1>  
           <table>
