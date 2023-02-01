@@ -1,16 +1,16 @@
 # TestRepo
 <html>
   
-    <style
- 
-    </style>
+  <style>
+    #foo {color: red}
+  </style>
 
   
   <body>
           <table>
            <thead>
               <tr>
-                 <th>Header1</th>
+                 <th id="foo">Header1</th>
                  <th>Header2</th>
                  <th>Header3</th>
               </tr>
