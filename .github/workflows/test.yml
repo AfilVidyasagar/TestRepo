@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: email_nofication
 
 # Controls when the workflow will run
 on:
@@ -26,9 +26,12 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
+      
+      # Here is the notification step
+      - name: Send email notification
+        uses: your/email-action@v1
+        with:
+          to: avidyasagar@suncor.com
+          subject: 'Workflow completed successfully'
+          body: 'The workflow has been completed without errors.'
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
