@@ -28,8 +28,8 @@ jobs:
         run: echo Hello, world!
       
       # Here is the notification step
-      - name: Send email notification
-        uses: your/email-action@v1
+      - name: CINotify Email
+        uses: cinotify/github-action@v1.1.2
         with:
           to: avidyasagar@suncor.com
           subject: 'Workflow completed successfully'
