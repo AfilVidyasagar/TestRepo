@@ -28,7 +28,7 @@ jobs:
         id: read_html
         run: |
           # Replace 'path/to/your/file.html' with the actual path to your HTML file
-          html_file="/test.html"
+          html_file="test.html"
           html_content=$(cat "$html_file")
           echo "::set-output name=html_content::$html_content"
       
