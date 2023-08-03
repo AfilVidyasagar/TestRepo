@@ -42,5 +42,5 @@ jobs:
         with:
           to: avidyasagar@suncor.com
           subject: 'Workflow completed successfully'
-          body: 'The workflow has been completed without errors.'
+          body: TestRepo/test.html
 
