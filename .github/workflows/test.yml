@@ -24,9 +24,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Read HTML file
+        id: read_html
+        run: |
+          # Replace 'path/to/your/file.html' with the actual path to your HTML file
+          html_file="/test.html"
+          html_content=$(cat "$html_file")
+          echo "::set-output name=html_content::$html_content"
+      
+      
 
       # Here is the notification step
       - name: CINotify Email
@@ -34,7 +40,6 @@ jobs:
         with:
           to: avidyasagar@suncor.com
           subject: 'Workflow completed successfully'
-          body: Here is your test html 
-          attachments: | 
-                   test.html |
-
+          # Use the HTML content from the previous step as the email body
+          body: ${{ steps.read_html.outputs.html_content }}
+          
