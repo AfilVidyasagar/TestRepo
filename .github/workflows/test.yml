@@ -28,7 +28,14 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      
+
+      - name: Attach HTML File
+        uses: actions/upload-artifact@v2
+        with:
+          name: my-html-file # Replace with a unique name for your artifact
+          path: TestRepo/test.html # Replace with the actual path to your HTML file
+
+
       # Here is the notification step
       - name: CINotify Email
         uses: cinotify/github-action@v1.1.2
