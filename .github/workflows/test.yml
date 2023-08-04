@@ -42,4 +42,5 @@ jobs:
           subject: 'Workflow completed successfully'
           # Use the HTML content from the previous step as the email body
           body: ${{ steps.read_html.outputs.html_content }}
+          content_type: text/html
           
