@@ -36,11 +36,13 @@ jobs:
 
       # Here is the notification step
       - name: CINotify Email
-        uses: cinotify/github-action@v1.1.2
+        uses: dawidd6/action-send-mail@v3
         with:
+          server_address: smtp.office365.com
           to: avidyasagar@suncor.com
           subject: 'Workflow completed successfully'
           # Use the HTML content from the previous step as the email body
-          body: ${{ steps.read_html.outputs.html_content }}
-          content_type: text/html
+          html_body: "test.html"
+          # body: ${{ steps.read_html.outputs.html_content }}
+      
           
